@@ -1,37 +1,20 @@
-import "./categories.style.scss";
-import { Directory } from "./components/directory/Directory";
+import { Routes, Route } from "react-router-dom";
+
+import { Navigation } from "./routes/navigation/Navigation";
+import { Cred ,Shop,Home, Tour, Tourdetails} from "./screens";
+import { Minidrawer } from "./components/drawer/Minidrawer";
 
 function App() {
-  const categories = [
-    {
-      title: "Hats",
-      id: 1,
-      imageUrl: `https://i.ibb.co/0jqHpnp/sneakers.png`,
-    },
-    {
-      title: "jackets",
-      id: 2,
-      imageUrl: `https://i.ibb.co/0jqHpnp/sneakers.png`,
-    },
-    {
-      title: "Sneakers",
-      id: 3,
-      imageUrl: `https://i.ibb.co/0jqHpnp/sneakers.png`,
-    },
-    {
-      title: "Womens",
-      id: 4,
-      imageUrl: `https://i.ibb.co/0jqHpnp/sneakers.png`,
-    },
-    {
-      title: "Mens",
-      id: 5,
-      imageUrl: `https://i.ibb.co/0jqHpnp/sneakers.png`,
-    },
-  ];
-
   return (
-    <Directory categories={categories}/>
+    <Routes>
+      <Route path="/" element={<Navigation />}>
+        <Route index={true} element={<Home />}></Route>
+        <Route path="shop" element={<Shop />}></Route>
+      </Route>
+      <Route path="cred" element={<Cred />}></Route>
+      <Route path="mui" element={<Minidrawer />}></Route>
+      <Route path="tourpage" element={<Tourdetails />}></Route>
+    </Routes>
   );
 }
 
