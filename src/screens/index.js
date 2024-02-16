@@ -1,0 +1,5 @@
+export * from "./shop"
+export * from "./home"
+export * from "./cred"
+export * from "./tour"
+export * from "./tourdetails"

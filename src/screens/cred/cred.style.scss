@@ -1,0 +1,71 @@
+.Cred-Conatiner {
+  background-color: #1eb2f2;
+
+  .Nav-Conatiner {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+
+    .logo-Conatiner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      .nav-Link1 {
+        color: #fff;
+      }
+
+      .nav-Link1:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .btn-conatiner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      .nav-Link1 {
+        color: #fff;
+      }
+    }
+  }
+
+  .grid-conatiner {
+    margin-top: 20px;
+    color: #fff;
+  }
+}
+
+.center {
+  background-color: #062b3e;
+
+  .paper {
+    background-color: #062b3e;
+    color: #fff;
+
+    .card-text {
+      color: #fff;
+    }
+  }
+
+  .paper:hover{
+    background-color: #153e53;
+  }
+}
+
+.card-section {
+  background-color: #062b3e;
+}
+
+.boxclasss .paper .MuiBox-root .card-text{
+    color: aqua;
+}
+
+// background-color: #1eb2f2;  CRED iQ’s Overall Distress Rate Increased in January. Office climbs back above 10%
+// background-image: url(https://cred-iq.com/skyline.484bbdc2.svg), linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(30,178,242,1) 0%, rgba(0,212,255,1) 100%);
+// background-repeat: repeat-x;  CRED iQ aggregated all of the payment statuses reported by each loan in January as well as its special servicing status to arrive at the Ove...
+// background-position: 100% bottom;
+// background-blend-mode: luminosity;
