@@ -13,7 +13,7 @@ import { Customodal } from "../../components/modal/Customodal";
 export const Tourdetails = () => {
   return (
     <>
-      {/* <MenuBar /> */}
+      <MenuBar />
       <Container sx={{ width: 900 }}>
         <Typography variant="h3" component="h1" marginTop={3}>
           Explore the world
